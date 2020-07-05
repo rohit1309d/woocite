@@ -1,0 +1,15 @@
+#subnav {
+    height:70px;
+    background:#FFFFFF url(../images/challenge/secondary-bg-70.png) repeat-x scroll 0 0;
+    overflow:visible;
+}
+
+ul#secondary li {
+	text-align:center;
+    list-style-type: none;
+}
+
+ul#secondary li a span {
+	line-height:normal;
+}
+

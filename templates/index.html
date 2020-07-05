@@ -1,0 +1,640 @@
+{% load static %}
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>InnoCentive Challenge Center</title>
+
+    <link href="{% static 'css/font-awesome.min.css' %}" type="text/css" rel="stylesheet" media="screen, projection">
+    <script type="text/javascript" async="" src="{% static 'css/ga.js' %}"></script>
+    <script src="{% static 'css/jquery-1.10.2.min.js' %}" type="text/javascript"></script>
+    <link href="{% static 'css/jquery-ui-1.10.4.custom.css' %}" type="text/css" rel="stylesheet" media="screen, projection">
+    <script src="{% static 'css/bundle-bundle_jqueryvalidate_head.js' %}" type="text/javascript"></script>
+    <link href="{% static 'css/bundle-bundle_dotcom_head.css' %}" type="text/css" rel="stylesheet" media="screen, projection">
+    <script src="{% static 'css/jquery-ui-1.10.4.custom.min.js' %}" type="text/javascript"></script>
+    <link href="{% static 'css/bundle-bundle_bootstrap_head.css' %}" type="text/css" rel="stylesheet" media="screen, projection">
+    <script src="{% static 'css/bundle-bundle_bootstrap_head.js' %}" type="text/javascript"></script>
+    <link href="{% static 'css/bundle-bundle_bootstrapselect_head.css' %}" type="text/css" rel="stylesheet" media="screen, projection">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript" src="{% static 'css/bootstrap-slider.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'css/compatibility.js' %}"></script>
+    <script type="text/javascript" src="{% static 'css/pdf.js' %}"></script>
+    <script type="text/javascript" src="{% static 'css/pdf.worker.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/bootstrap-slider.min.css' %}">
+
+  	<script>
+  	jQuery.browser = {};
+  	(function () {
+    	jQuery.browser.msie = false;
+    	jQuery.browser.version = 0;
+    	if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+      	jQuery.browser.msie = true;
+      	jQuery.browser.version = RegExp.$1;
+    	}
+  	})();
+  	</script>
+
+
+    <meta name="layout" content="ux/topnav">
+
+
+    <link rel="stylesheet" href="{% static 'css/challenge-browse.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/image-nav.css' %}" media="all">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/container.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui-1.8.custom.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/layout_nonavUX.css' %}" media="all">
+    <script src="{% static 'css/navigationPanel.js' %}" type="text/javascript"></script>
+
+
+
+    <style type="text/css">
+      iframe#_hjRemoteVarsFrame {
+        display: none !important;
+        width: 1px !important;
+        height: 1px !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
+  </head>
+
+
+
+  <body data-gr-c-s-loaded="true">
+
+    <header>
+      <nav class="navbar navbar-default ">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="#" rel="home">
+                  <img src="{% static 'images/innocentive-logo-white-sm-196x33.png' %}" width="196" height="33" alt="Innocentive">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right" id="superNav">
+                  <li class="dropdown ">
+                      <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                          <span>Our Solvers</span>
+                          <span class="arrow-header-dropdown"><i class="fa fa-chevron-down"></i></span>
+                      </a>
+                      <ul class="sub-menu dropdown-menu">
+                          <li><a href="#"><span class="">Our Solvers</span></a></li>
+                          <li><a href="#"><span class="">Top Solvers</span></a></li>
+                          <li><a href="#"><span class="">Winning Solvers</span></a></li>
+                          <li><a href="#"><span class="">Solver FAQs</span></a></li>
+                      </ul>
+                  </li>
+
+                  <li class="dropdown ">
+                      <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                          <span>Our Offering</span>
+                          <span class="arrow-header-dropdown"><i class="fa fa-chevron-down"></i></span>
+                      </a>
+                      <ul class="sub-menu dropdown-menu">
+                          <li><a href="#"><span class="">Overview</span></a></li>
+                          <li><a href="#"><span class="">Add-ons</span></a></li>
+                          <li><a href="#"><span class="">Seeker FAQs</span></a></li>
+                      </ul>
+                  </li>
+
+                  <li class="dropdown active">
+                      <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                          <span>Challenge Center</span>
+                          <span class="arrow-header-dropdown"><i class="fa fa-chevron-down"></i></span>
+                      </a>
+                      <ul class="sub-menu dropdown-menu">
+                        <li><a href="#"><span class="">Challenges</span></a></li>
+                        <li><a href="#"><span class="">Premium Challenge Types</span></a></li>
+                      </ul>
+                  </li>
+
+                  <li class="dropdown ">
+                      <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span>Resources</span>
+                        <span class="arrow-header-dropdown"><i class="fa fa-chevron-down"></i></span>
+                      </a>
+                      <ul class="sub-menu dropdown-menu">
+                        <li><a href="#"><span class="">Webinars</span></a></li>
+                        <li><a href="#"><span class="">Whitepapers</span></a></li>
+                        <li><a href="#"><span class="">Case Studies</span></a></li>
+                      </ul>
+                  </li>
+
+                  <li class="dropdown ">
+                      <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span>About</span>
+                        <span class="arrow-header-dropdown"><i class="fa fa-chevron-down"></i></span>
+                      </a>
+                      <ul class="sub-menu dropdown-menu">
+                        <li><a href="#"><span class="">About</span></a></li>
+                        <li><a href="#" aria-haspopup="true"><span class="">Leadership</span></a></li>
+                        <li><a href="#"><span class="">InnoCentive Partners</span></a></li>
+                        <li><a href="#" aria-haspopup="true"><span class="">News &amp; Events</span></a></li>
+                        <li><a href="#"><span class="">Careers</span></a></li>
+                      </ul>
+                  </li>
+                  <li class="menu-item"><a href="#">Blog</a></li>
+                  <li class="dropdown ">
+                      <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                          <span>Contact</span>
+                          <span class="arrow-header-dropdown"><i class="fa fa-chevron-down"></i></span>
+                      </a>
+                      <ul class="sub-menu dropdown-menu">
+                          <li><a href="# aria-haspopup="true"><span class="">Sales</span></a></li>
+                          <li><a href="#><span class="">Technical Support</span></a></li>
+                          <li><a href="http://www.innocentive.com/contact/press-inquiries/" aria-haspopup="true"><span class="">Press Inquiries</span></a></li>
+                          <li><a href="#><span class="">Partnership Inquiries</span></a></li>
+  		                    <li><a href="#><span class="">Give Feedback</span></a></li>
+                      </ul>
+                  </li>
+
+                  <li class="menu-item" style="padding-right: 0px;">
+                      <a href="#" title="Click here to register"> Register </a>
+                  </li>
+
+                  <li class="login menu-item">
+                      <a href = "#" title="Click here to log in"><b>&nbsp;Login</b></a>
+                  </li>
+
+                </ul>
+            </div> <!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+  </header>
+
+	<div class="body-container">
+		<div class="container">
+			<form action="#" method="post" name="filterForm" id="filterForm">
+        <input type="hidden" name="SYNCHRONIZER_TOKEN" value="88e903aa-ac1e-4a68-91bc-a3445f7ad7a5" id="SYNCHRONIZER_TOKEN">
+        <input type="hidden" name="SYNCHRONIZER_URI" value="/ar/challenge/browse" id="SYNCHRONIZER_URI">
+
+
+        <div class="row justify-content-md-center">
+        	<div class="col-md-12">
+        		<a class="btn btn-default btn-lg inno-light-grey extra-wide" href="#" title="Click here to register"> REGISTER
+        			AS SOLVER</a>
+        	</div>
+        </div>
+
+
+        <div class="row">
+        	<div class="col-md-12">
+        		<ul class="nav nav-tabs nav-justified">
+        			<li id="innocentive-list-item" class="active"><a id="innocentiveChallengelink" onclick="setSource(&quot;InnoCentive Challenges&quot;,true);"> InnoCentive Challenges </a></li>
+        			<li id="pavilion-list-item" class="dropdown">
+                <a id="pavilionListLink" class="dropdown-toggle" data-toggle="dropdown" href="#">Pavilions<span class="caret"></span></a>
+                <ul class="dropdown-menu multi-column columns-3">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <ul class="multi-column-dropdown">
+                        <li>
+                          <a href="#"><span class="pavilion-list-text"><img src="{% static 'images/logo-enel-2016-160126184114_medium_100.png' %}" alt="Pavilion: Enel" width="100" height="60" style="margin:4px;border:1px solid #cdcdcd;vertical-align:middle;"> Enel </span> </a>
+                        </li>
+
+                        <li>
+                          <a href="#"><span class="pavilion-list-text"><img src="{% static 'images/23311.jpg' %}" alt="Pavilion: COVID-19" width="100" height="60" style="margin:4px;border:1px solid #cdcdcd;vertical-align:middle;"> COVID-19 </span> </a>
+                        </li>
+
+                        <li>
+                          <a href="#"><span class="pavilion-list-text"><img src="{% static 'images/az-oi-p2-52x30_100.jpg' %}" alt="Pavilion: AstraZeneca" width="100" height="60" style="margin:4px;border:1px solid #cdcdcd;vertical-align:middle;"> AstraZeneca </span> </a>
+                        </li>
+
+                        <li>
+                          <a href="#"><span class="pavilion-list-text"><img src="{% static 'images/CC_alt_3p_100.png' %}" alt="Pavilion: Cleveland Clinic" width="100" height="60" style="margin:4px;border:1px solid #cdcdcd;vertical-align:middle;"> Cleveland&nbsp;Clinic </span> </a>
+                        </li>
+
+                        <li>
+                          <a href="#"><span class="pavilion-list-text"><img src="{% static 'images/CTTSOLogo_Web_800x800_100.png' %}" alt="Pavilion: CTTSO" width="100" height="60" style="margin:4px;border:1px solid #cdcdcd;vertical-align:middle;"> CTTSO </span> </a>
+                        </li>
+
+                        <li>
+                          <a href="#"><span class="pavilion-list-text"><img src="{% static 'images/DARPA-ip-h2-940x168_100.png' %}" alt="Pavilion: DARPA" width="100" height="60" style="margin:4px;border:1px solid #cdcdcd;vertical-align:middle;"> DARPA </span> </a>
+                        </li>
+
+                        <li>
+                          <a href="#"><span class="pavilion-list-text"><img src="{% static 'images/elanco_100.png' %}" alt="Pavilion: Elanco" width="100" height="60" style="margin:4px;border:1px solid #cdcdcd;vertical-align:middle;"> Elanco </span> </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                      <ul class="multi-column-dropdown">
+                        <li>
+                          <a href="#"><span class="pavilion-list-text"><img src="{% static 'images/hif_logo_highres_1_0_100.png' %}" alt="Pavilion: HIF WASH" width="100" height="60" style="margin:4px;border:1px solid #cdcdcd;vertical-align:middle;"> HIF&nbsp;WASH </span> </a>
+                        </li>
+
+                        <li>
+                          <a href="#"><span class="pavilion-list-text"><img src="{% static 'images/Lumina_horiz_rgb_100.png' %}" alt="Pavilion: Lumina" width="100" height="60" style="margin:4px;border:1px solid #cdcdcd;vertical-align:middle;"> Lumina </span> </a>
+                        </li>
+
+                        <li>
+                          <a href="#"><span class="pavilion-list-text"><img src="{% static 'images/nasa-tournament-lab_100.png' %}" alt="Pavilion: NASA" width="100" height="60" style="margin:4px;border:1px solid #cdcdcd;vertical-align:middle;"> NASA </span> </a>
+                        </li>
+
+                        <li>
+                          <a href="#"><span class="pavilion-list-text"><img src="{% static 'images/rsc-logo-rev_100.png' %}" alt="Pavilion: Royal Society of Chemistry" width="100" height="60" style="margin:4px;border:1px solid #cdcdcd;vertical-align:middle;"> Royal&nbsp;Society&nbsp;of&nbsp;Chemistry </span> </a>
+                        </li>
+
+                        <li>
+                          <a href="#"><span class="pavilion-list-text"><img src="{% static 'images/tec^edge-pavilion-banner_100.jpg' %}" alt="Pavilion: Tec^Edge (Air Force)" width="100" height="60" style="margin:4px;border:1px solid #cdcdcd;vertical-align:middle;"> Tec^Edge&nbsp;(Air&nbsp;Force) </span></a>
+                        </li>
+
+                        <li>
+                          <a href="#"><span class="pavilion-list-text"><img src="{% static 'images/Icon2_100.png' %}" alt="Pavilion: USSOCOM" width="100" height="60" style="margin:4px;border:1px solid #cdcdcd;vertical-align:middle;"> USSOCOM </span> </a>
+                        </li>
+
+                      </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                      <ul class="multi-column-dropdown">
+                        <li>
+                          <a href="#"><span class="pavilion-list-text"><img src="{% static 'images/IC_seal_100.png' %}" alt="Pavilion: US Intelligence Community" width="100" height="60" style="margin:4px;border:1px solid #cdcdcd;vertical-align:middle;"> US&nbsp;Intelligence&nbsp;Community </span> </a>
+                        </li>
+
+                        <li>
+                          <a href="#"><span class="pavilion-list-text"><img src="{% static 'images/Bor-v2_100.png' %}" alt="Pavilion: Water" width="100" height="60" style="margin:4px;border:1px solid #cdcdcd;vertical-align:middle;"> Water </span> </a>
+                        </li>
+
+                        <li>
+                          <a href="#"><span class="pavilion-list-text"><img src="{% static 'images/clean-tech-final_100.jpg' %}" alt="Pavilion: Clean Tech" width="100" height="60" style="margin:4px;border:1px solid #cdcdcd;vertical-align:middle;"> Clean&nbsp;Tech </span> </a>
+                        </li>
+
+                        <li>
+                          <a href="#"><span class="pavilion-list-text"><img src="{% static 'images/developing-countries-final_100.jpg' %}" alt="Pavilion: Developing Countries" width="100" height="60" style="margin:4px;border:1px solid #cdcdcd;vertical-align:middle;"> Developing&nbsp;Countries </span> </a>
+                        </li>
+
+                        <li>
+                          <a href="#"><span class="pavilion-list-text"><img src="{% static 'images/environment-h2_100.jpg' %}" alt="Pavilion: Environment" width="100" height="60" style="margin:4px;border:1px solid #cdcdcd;vertical-align:middle;"> Environment </span> </a>
+                        </li>
+
+                        <li>
+                          <a href="#"><span class="pavilion-list-text"><img src="{% static 'images/global-health_100.jpg' %}" alt="Pavilion: Global Health" width="100" height="60" style="margin:4px;border:1px solid #cdcdcd;vertical-align:middle;"> Global&nbsp;Health </span> </a>
+                        </li>
+
+                        <li>
+                          <a href="#"><span class="pavilion-list-text"><img src="{% static 'images/public-good-final_100.jpg' %}" alt="Pavilion: Public Good" width="100" height="60" style="margin:4px;border:1px solid #cdcdcd;vertical-align:middle;"> Public&nbsp;Good </span> </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+
+      				<li id="partner-list-item" class="">
+                <a onclick="setSource(&quot;Partner Challenges&quot;,true);" id="partnerChallengelink">Partner Challenges</a>
+              </li>
+
+        		</ul>
+        	</div>
+        </div>
+
+
+        <div class="row" id="pavilion-banner" style="display:none">
+        	<div class="tabContainer  tabContainer-bottom ">
+            <ul class="nav nav-pills">
+              <li>
+                <a class="link-rss" href="#">
+                  <i class="fa fa-rss-square"><span class="hiddenCaption">Rss Feeds</span></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row  filter-panel-refresh inno-light-grey" id="filters-panel">
+        	<div class="col-md-12">
+            <div id="filters">
+              <input type="hidden" id="expandAction" name="expandAction" value="expand"> <input type="hidden" id="pavilionId" name="pavilionId" value="">
+              <input type="hidden" id="pavilionName" name="pavilionName" value=""> <input type="hidden" id="categoryName" name="categoryName" value="">
+        			<input type="hidden" id="filterId" name="filterId" value="">
+        			<input type="hidden" id="refreshOffset" name="refreshOffset" value="">
+        			<input type="hidden" id="pagefiltered" name="pagefiltered" value="true">
+        			<input type="hidden" id="currentOffset" name="currentOffset" value="">
+              <input type="hidden" id="useCurrentOffset" name="useCurrentOffset" value="true">
+        			<input type="hidden" id="source" name="source" value="innocentive">
+        			<input type="hidden" name="max" value="10">
+        			<input type="hidden" name="clear" value="on">
+        		</div>
+
+        		<div class="form-row ">
+              <div class="col-md-2">
+        				<div id="searchTerm">
+        					<label for="searchTerm" class="filter-label-refresh">Search Term</label>
+                  <input class="form-control cb-input" type="text" id="searchTerm" name="searchTerm" onkeypress="return handleTextSearchInput(event);" value="">
+        				</div>
+        			</div>
+
+
+        			<div class="col-md-2">
+        				<div id="disciplines">
+        					<label for="disciplines" class="filter-label-refresh">Discipline</label>
+        					<div id="disciplines">
+        						<span class="multiselect-native-select">
+                      <select class="custom-select cb-select" name="disciplineFilterRefresh" id="disciplineFilterRefresh" multiple="multiple">
+                        <option value="cb_1844">Business &amp; Entrepreneurship</option>
+                        <option value="cb_1856">Chemistry</option>
+                        <option value="cb_1866">Computer/Info. Technology</option>
+                        <option value="cb_1875">Engineering/Design</option>
+                        <option value="cb_1886">Food/Agriculture</option>
+                        <option value="cb_1887">Life Sciences</option>
+                        <option value="cb_1896">Math/Statistics</option>
+                        <option value="cb_1902">Physical Sciences</option>
+                        <option value="cb_1913">Requests for Partners</option>
+                        <option value="cb_1937">Social Innovation</option>
+                      </select>
+
+
+                    </span>
+        					</div>
+        				</div>
+        			</div>
+
+
+        			<div class="col-md-2">
+        				<div id="challengeType">
+        					<label for="challengeTypes" class="filter-label-refresh">Type</label>
+        					<div id="challengeTypes">
+        						 <span class="multiselect-native-select">
+                       <select class="custom-select cb-select" name="challengeTypeFilterRefresh" id="challengeTypeFilterRefresh" multiple="multiple">
+                         <option value="ct_Ideation">Ideation</option>
+                         <option value="ct_Theoretical">Theoretical</option>
+                         <option value="ct_RTP">RTP</option>
+                         <option value="ct_eRFP">eRFP</option>
+                       </select>
+
+                     </span>
+        					</div>
+        				</div>
+        			</div>
+
+
+        			<div class="col-md-2">
+        				<div id="pavilions" style="display:block">
+        					<label for="pavilionList" class="filter-label-refresh">Pavilions</label>
+        					<div id="pavilionlist">
+        						<span class="multiselect-native-select">
+                      <select class="custom-select cb-select" name="pavilionFilterRefresh" id="pavilionFilterRefresh" multiple="multiple">
+                        <option value="pv_1944">Enel</option>
+                        <option value="pv_1951">COVID-19</option>
+                        <option value="pv_1936">AstraZeneca</option>
+                        <option value="pv_1929">Cleveland Clinic</option>
+                        <option value="pv_1938">CTTSO</option>
+                        <option value="pv_1940">DARPA</option>
+                        <option value="pv_1949">Elanco</option>
+                        <option value="pv_1935">HIF WASH</option>
+                        <option value="pv_1934">Lumina</option>
+                        <option value="pv_1918">NASA</option>
+                        <option value="pv_1948">Royal Society of Chemistry</option>
+                        <option value="pv_1925">Tec Edge (Air Force)</option>
+                        <option value="pv_1945">USSOCOM</option>
+                        <option value="pv_1950">US Intelligence Community</option>
+                        <option value="pv_1942">Water</option>
+                        <option value="pv_1915">Clean Tech</option>
+                        <option value="pv_1914">Developing Countries</option>
+                        <option value="pv_1930">Environment</option>
+                        <option value="pv_1916">Global Health</option>
+                        <option value="pv_1917">Public Good</option>
+                      </select>
+
+
+                      </span>
+        					</div>
+        				</div>
+        			</div>
+        			<!-- end pavilions -->
+
+
+        			<div class="col-md-2">
+        				<div id="status">
+        					<label for="statuslist" class="filter-label-refresh">Status</label>
+        					<div id="sourceslist">
+
+        					<span class="multiselect-native-select">
+                    <select class="custom-select cb-select" name="statusFilterRefresh" id="statusFilterRefresh" multiple="multiple">
+                      <option value="st_OP" selected="">Open</option>
+        							<option value="st_EV" selected="">Under Evaluation</option>
+                    </select>
+                  </span>
+        					</div>
+        				</div>
+        			</div>
+
+
+        			<div class="col-md-2">
+        				<div id="filterButton">
+                  <label for="filterButtonInput" class="hiddenAlignmentLabel"></label>
+        					<input id="filterButtonInput" type="submit" class="btn btn-default btn-primary cb-filter inno-dark-blue" value="FILTER">
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+
+
+				<div id="challengeListDiv">
+          <div id="source-bar">
+            <div class="row">
+            	<div class="col-md-4">
+            		<div class="save-settings-panel">
+            			<div class="show-bar-left form-inline"> <label for="sortProp" class="show-bar-text">Sort By:&nbsp;</label>
+                    <select id="sortProp" onchange="syncSort(this)" class="select-style-refresh" name="sortProp">
+            					<option value="Title">Title</option>
+            					<option value="Deadline">Deadline</option>
+            					<option value="Posted" selected="">Posted Date</option>
+            					<option value="Award">Award</option>
+            				</select>
+            				<label for="sortOrder" class="show-bar-text sr-only">Sort Order</label>
+            			  <select id="sortOrder" onchange="syncSortOrder(this)" class="select-style-refresh" name="sortOrder">
+                      <option value="desc" selected="">Descending</option>
+                      <option value="asc">Ascending</option>
+      	            </select>
+            			</div>
+            		</div>
+            	</div>
+            	<div class="col-md-8">
+            		<span class="show-bar">
+            		<span class="show-bar-select"><label for="max-select">Page:&nbsp;</label></span>
+            		<span class="paginateButtons">
+                  {% if page_obj.has_previous %}
+                  <a href="?page={{page_obj.previous_page_number}}">&laquo;</a>
+                  <a href="?page={{page_obj.previous_page_number}}">{{page_obj.previous_page_number}}</a>
+                {% endif %}
+                <span class="currentStep"><a class="active" href="?page={{page_obj.number}}">{{page_obj.number}}</a></span>
+                {% if page_obj.has_next %}
+                  <a href="?page={{page_obj.next_page_number}}">{{page_obj.next_page_number}}</a>					
+                  <a href="?page={{page_obj.next_page_number}}">&raquo;</a>
+                {% endif %}
+            		</span>
+            		</span>
+            	</div>
+            </div>
+
+        </div>
+        <div id="listing-header">
+            <div class="col-md-12">
+                <div id="challenge-content-panel-refresh" class="row">
+                    <div id="challenge-content" class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div id="challenge-list">
+
+        {% for clg in page_obj %}
+
+        <div class="row challenge-row-refresh " id="abstract_row_9934293">
+
+        	<div class="col-md-2 challenge-image media-center">
+        				<img class="img-thumbnail inno-image" src="{{clg.img.url}}"  width="200px" height="200px">
+        	</div>
+
+        	<div class="col-md-10">
+        		<div class="row">
+        			<div class="col-md-9 challenge-details-column">
+        				<div class="challenge-name inno-dark-blue-text media-center">
+        					<a href="#">
+        							<p>{{clg.name}}</p>
+
+        					</a>
+        				</div>
+        			</div>
+
+        			<div class="col-md-3">            
+                <div class="media-center">
+                  <span class="right award-amount use-Questrial"> ${{clg.cost}} USD
+                  </span>
+                </div>
+        			</div>
+        		</div>
+
+        		<div class="row">
+        			<div class="col-md-9">
+        				<div class="byline media-center">Deadline:&nbsp;<strong> {{clg.deadline}} EDT </strong>&nbsp;|&nbsp; <span class="byline">Active Solvers:&nbsp;</span>60</div>
+        			</div>
+        			<div class="col-md-3">
+        				<div class="right media-center"><span class="inno-green label-padding label-title">
+                {% if clg.status %}
+                  UNDER EVALUATION
+                {% else %}
+                  OPEN
+                {% endif %}
+                </span></div>
+
+        			 </div>
+        		</div>
+        		<div class="row">
+        		  <div class="col-md-9">
+                  <div class="challenge-tags media-center">
+                    <span class="label tags-title">Tags:&nbsp;</span>
+                    
+                    <span class="tags-title">{{clg.get_des}}</span>,
+                    <span class="tags-title">{{clg.get_typ}}</span>,
+                    <span class="tags-title">{{clg.get_pav}}</span>,
+                  </div>
+        		  </div>
+        		  <div class="col-md-3"></div>
+        		 </div>
+        		<div class="row">
+        			<div class="col-md-12">
+        				<div class="delta media-center">
+        					<a href="javascript:viewDetails({{clg.id}});" id="more_link_{{clg.id}}" style="font-size:11px;font-weight:bold;font-family:Droid Serif !important;">
+        						+View More</a> <a href="javascript:hideDetails({{clg.id}});" id="hide_link_{{clg.id}}" style="font-size:11px;font-weight:bold;font-family:Droid Serif !important;display:none">
+        						-View Less</a>
+        				</div>
+        			</div>
+        		</div>
+
+        	</div>
+        </div>
+        <div class="row">
+        	<div class="col-md-12">
+        		<div id="details_{{clg.id}}" style="display:none;">
+        			<div class="challenge-text-style">
+        				<div class="challenge-brief-style media-center">
+        					<p>{{clg.des}}</p>
+                  <p>&nbsp;</p>
+        					<a href="#">Read Challenge Details
+        				</div>
+      					<p class="challenge-source-style media-center">
+      						<b>Challenge ID:</b> &nbsp;
+      						{{clg.id}}&nbsp;&nbsp;&nbsp;
+      					</p>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+
+        {% endfor %}
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+        
+
+        
+      </div>
+
+      <script type="text/javascript">
+
+          var co = $('#currentOffset');
+          if (co.value != '') {
+              $('#refreshOffset').val($('currentOffset').val());
+          }
+
+      </script>
+
+    </div>
+			</form>
+		</div>
+	</div>
+
+	<footer class="container-fluid">
+	<div class="row">
+		<div class="col-sm-3 footer-logo">
+
+				<a href="#" rel="home"> <img src="{% static 'images/innocentive-logo-black-sm.png' %}" alt="InnoCentive">
+				</a>
+
+		</div>
+		<div class="col-sm-9 footer-links">
+			<div class="row">
+				<div class="col-md-9">
+
+
+
+				</div>
+
+				<div class="col-md-3">
+
+						<a href="#">
+							&nbsp;©&nbsp;2020 InnoCentive, Inc. All rights reserved.
+						</a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</footer>
+<script src="{% static 'css/browse.js' %}" type="text/javascript"></script>
+<script src="{% static 'css/bundle-bundle_dotcom_defer.js' %}" type="text/javascript"></script>
+<script src="{% static 'css/bundle-bundle_jqueryExtras_defer.js' %}" type="text/javascript"></script>
+
+<script src="{% static 'css/jquery.are-you-sure.js' %}" type="text/javascript"></script>
+<script src="{% static 'css/bundle-bundle_bootstrapselect_defer.js' %}" type="text/javascript"></script>

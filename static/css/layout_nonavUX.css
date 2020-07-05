@@ -1,0 +1,1722 @@
+/**
+ * Name: layout.css
+ * Description: The main page layout and structure.
+ * Dependencies: reset.css, ie6.css, ie7.css
+ * Notes: The CSS on this page is organized in order of where each element appears on the page.
+ * Please do not modify this page without speaking with Mark Madden. 8.1.08
+ */
+ 
+body {
+	font-family:  'Droid Serif', Ariel, Helvetica, sans-serif;
+} 
+sup,sub {
+    font-size: 60% !important;
+}
+
+sup {
+    vertical-align: 50% !important;
+}
+
+sub {
+    vertical-align: -10% !important;
+}
+
+
+button.btn, a.btn, div.btn, class.btn, input,btn, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Questrial' !important;
+}
+
+#filterForm a {
+	font-family: 'Questrial' !important;
+}
+
+
+
+.filter-panel-refresh label {
+	font-family: 'Questrial' !important;
+}
+
+.challenge-name {
+	font-family: 'Questrial' !important;
+}
+
+.label-title {
+    font-family: 'Questrial' !important;
+}
+
+.label-margin {
+	margin-top: 10px;
+}
+
+.use-Questrial {
+    font-family: 'Questrial' !important;
+}
+
+#filterForm .paginateButtons a {
+        font-family: 'Droid Serif', Ariel, Helvetica, sans-serif !important;
+}
+
+.submission-list th, .submission-list .btn, .submission-list div {
+    font-family: 'Droid Serif', Ariel, Helvetica, sans-serif ;
+    }
+
+/*--------> MAIN Creation & Positioning - contains all elements below <---------*/
+
+#main-panel {
+    width: 1004px;
+    position: relative;
+    display: block;
+    margin: auto;
+    height: auto
+}
+
+#cpanel-holder {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    background: transparent url(../../images/main-bg-nonav.png) repeat-y;
+    vertical-align: top;
+    margin: 0;
+
+}
+
+.help-panel {
+    position: relative;
+    display: block;
+    height: auto;
+    background: transparent url(../../images/main-bg-nonav.png) repeat-y;
+    vertical-align: top;
+    margin: 0;
+
+}
+
+ 
+
+.spacer {
+    width: 4px;
+    float: left;
+}
+
+ 
+/*--------> CONTENT area Creation & Positioning <---------*/
+
+#content-panel {
+    height: auto;
+    position: relative;
+    display: block;
+    margin-left: 15px;
+    font-size: 0.75em; /* 16x0.75=12px */
+}
+
+.content-panel2 {
+    height: auto;
+    position: relative;
+    display: block;
+    font-size: 0.75em; /* 16x0.75=12px */
+}
+
+a:link { color: #000067; }
+a:visited { color: #9e1f63; }
+
+/*--------> CHALLENGE GRID Creation & Positioning - contains all elements below <---------*/
+
+.challenge-grid-panel {
+    position: relative;
+    display: block;
+}
+
+.bluebg2 {
+     width: 100%;
+     height: auto;
+     padding: 10px 8px 10px 8px;
+     background: #eee;
+     border: 1px solid #ccc;
+     z-index: -2
+}
+
+.white-background-refresh {
+     width: 100%;
+     height: auto;
+     padding: 10px 8px 10px 8px;
+     background: white;
+     border: 1px solid black;
+     z-index: -2
+}
+
+.submission-row {
+	 margin-top: 15px;
+}
+
+.thumbnail-div {
+	float: left; 
+	clear: left; 
+	width: 50px; 
+	margin-bottom: 10px; 
+	 margin-right: 5px;
+}
+
+.reward-row-additional {
+}
+
+ 
+.discipline-title {
+    font-size: 1.667em; /* =20px, ems are sized relative to the parent  */
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+
+/*--------> PAGING & SHOWING Creation, Position, & Style <---------*/
+
+.challenge-grid-panel th {
+    color: #666;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.paging-container {
+    width: 740px;
+    position: relative;
+    display: block;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+
+
+.paginateButtons span {
+    padding: 2px 3px;
+}
+
+.paginateButtons .step {
+    padding: 2px 3px;
+}
+
+.paginateButtons .nextLink {
+    padding: 2px 3px;
+}
+
+.showing {
+    position: relative;
+    display: inline;
+    float: right;
+
+}
+
+/*--------> CHALLENGE LISTING Creation, Position, & Style <---------*/
+
+.awarded {
+    color: #f00;
+    font-weight: bold;
+}
+
+.bluebg {
+    height: 54px;
+    padding: 10px 8px 10px 8px;
+    background: transparent url(../../images/challenge_bg.gif) repeat-x;
+    border: 1px solid #ccc;
+}
+
+.contentpush {
+    padding-top: 10px;
+
+}
+
+.listing-line {
+    border-bottom: dotted 1px #036;
+    padding-top: 5px;
+    margin-bottom: 12px;
+}
+
+.challenge-listing {
+    line-height: 18px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.listing-title2 {
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.status {
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+}
+
+
+.listing-title2 a:hover {
+    text-decoration: underline;
+    color: #036;
+}
+
+.listing-title2 a:active {
+    text-decoration: underline;
+    color: #036;
+}
+
+.thumbnail {
+    margin-right: 8px;
+    float: left;
+    clear: left;
+    border: 1px #ccc solid;
+}
+
+.label-container {
+    clear: left;
+}
+
+/* .label { */
+/*     font-size: 11px; */
+/*     float: left; */
+/* } */
+
+ .filter3 {
+    position: relative;
+    display: block;
+    vertical-align: middle;
+    background: #eeeeee;
+    color: #666;
+    height: auto;
+    margin-bottom: 10px;
+     width: 100%;  
+    padding: 0;
+}
+
+.challenge-grid-panel2 {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.admin-page .challenge-grid-panel2, .admin-page .filter-panel2 {
+    border-top: 5px solid black;
+}
+
+
+
+.reward-row { 
+    position: relative;
+    display: block;
+    white-space: normal;
+    height: auto;
+    padding-top: 20px;
+    vertical-align: top;
+	width: auto;
+}
+
+.reward { /* Edited by SPC: Changed hard-coded width to auto and add right padding */
+    width: auto;
+    position: relative;
+    display: inline;
+    float: left;
+    padding-right: 60px;
+}
+
+.type { /* Edited by SPC: Changed hard-coded width to auto and add right padding */
+    width: auto;
+    position: relative;
+    display: inline;
+    float: left;
+    padding-right: 60px;
+}
+
+.number2 { /* Edited by SPC: Changed hard-coded width to auto and add right padding */
+    width: auto;
+    position: relative;
+    display: inline;
+    float: left;
+    padding-right: 60px;
+}
+
+.chalStatus { /* Created new by SPC: challenge status column div was missing its own unique style */
+    width: auto;
+    position: relative;
+    display: inline;
+    float: left;
+    padding-right: 60px;
+}
+
+.viewSolutions {
+	width: auto;
+	position: relative;
+	display: inline;
+	float: left;
+}
+
+
+.help-btn-holder2 {
+    float: right;
+    display: block;
+    position: relative;
+    vertical-align: top;
+    padding: 10px;
+}
+ 
+
+.no-margin {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.judge-panel {
+	border: 1px solid black;
+	padding: 5px;
+ 
+}
+
+.smaller-tabs {
+	padding: 2px;
+	margin: 0;
+	font-size: .8em;
+}
+
+#helpPanel {
+	margin: 5px;
+	padding: 10px;
+	display: block;
+	background-color: rgb(255, 255, 255);
+	overflow: auto;
+}
+ 
+.help-panel-text {
+	display: inline-block; 
+    vertical-align: top; 
+    float: right;
+    width: 195px; 
+    padding-top: 5px;"
+    margin-right: 20px;
+}
+
+.help-panel-graphic-box {
+	float: left;
+	max-width: 100%;
+	height: auto;
+}
+ 
+.help-panel-graphic {
+	padding: 5px 5px;
+	display: inline-flex;
+	max-width:100%;
+	height: auto;
+}
+
+#show-hide-tab-panel-arrow{
+    background-color: rgb(230, 230, 230);
+    padding: 8px;
+    border-radius: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+#show-hide-tab-panel-arrow:hover{
+    cursor: pointer;
+}
+
+.mych-heading {
+	margin-right: -15px;
+	margin-left: -15px;
+	color: #036;
+}
+
+.helpLabel {
+    color: #000067;
+    font-size: 1.1em;
+    font-weight: bold;
+    clear: left;
+	margin-left: 5px;
+	margin-top: 2px;
+}
+
+.graphicOverviewDismiss {
+	float: right;
+	border-width: 0px;
+	background-color: #ffd100;
+}
+
+.graphic-filter {
+	background-color: #ffd100;
+	overflow: auto;
+	padding: 0;
+	margin-bottom: 10px;
+}
+
+.search-filter {
+	padding: 0;
+	margin-bottom: 10px;
+	padding: 5px 0px 0px 0px;
+}
+
+.search-filter .filter-holder {
+	margin-left: 10px;
+	margin-top: 5px;
+	font-size: 12px;
+	margin-bottom:10px;
+}
+
+#challengesFilter .links{
+    line-height: 26px;
+}
+
+/* Filters */
+.info-main {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 1px rgba(37,30,31,.1);
+    -moz-box-shadow: 0 1px 1px rgba(37,30,31,.1);
+    box-shadow: 0 1px 1px rgba(37,30,31,.1);
+    border: solid 1px #dfdede;
+    margin: 0 0 10px;
+}
+.info-main .menu-area {
+    background: #ececec;
+    border-bottom: solid 1px #dfdede;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    white-space: nowrap;
+}
+
+.info-main .menu-area:after {
+    clear:both;
+}
+.info-main .menu-area .links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+    line-height: 36px;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+.info-main .menu-area .links > li {
+    color: #636363;
+    float: left;
+    border-right: 1px solid #c3c3c3;
+    position: relative;
+}
+.info-main .menu-area .links > li > a {
+    color: #636363;
+    display: block;
+    padding: 0 10px 0 9px;
+}
+.info-main .menu-area .links > li > a > i{
+    padding-left: 5px;
+}
+.info-main .menu-area .links > li:hover ul { display: block; }
+.info-main .menu-area .links > li > ul {
+    list-style: none;
+    padding: 12px 9px 3px 9px;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 10;
+    display: none;
+    background-color: #fff; 
+    -webkit-box-shadow: 0 1px 2px rgba(32,32,32,.25);
+    -moz-box-shadow: 0 1px 2px rgba(32,32,32,.25);
+    box-shadow: 0 1px 2px rgba(32,32,32,.25);
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: capitalize;
+    white-space:nowrap;
+}
+.info-main .menu-area .links > li > ul > li {
+    overflow: hidden;
+    margin: 0 0 11px;
+}
+.info-main .menu-area .links > li > ul > li > a { color: #636363; }
+.info-main .menu-area .links > li > ul label {
+    margin: 3px 0 0;
+}
+.info-main .info-links {
+    overflow: hidden;
+    padding: 10px 5px 10px 10px;
+    margin: 0;
+    list-style: none;
+    font-size: 13px;
+    line-height: 16px;
+}
+.info-main.add .info-links {
+    padding: 9px 0;
+}
+.info-main .info-links li {
+    float: left;
+    margin: 0 20px 0 0;
+}
+.info-main .info-links li h2 {
+    float: left;
+    color: #8b8b8b;
+    margin: 0 2px 0 0;
+    font-weight: normal;
+    font-size: 100%;
+    line-height: 16px;
+}
+.info-main .info-links li span {
+    float: left;
+    color: #428bca;
+    font-size: 100%;
+}
+
+.status-container .bootstrap-select>.btn {
+    width: auto;
+}
+
+.status-container div.bootstrap-select {
+    width: auto !important;
+}
+
+.status-container .btn {
+    font-size: 11px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+fieldset.info-main2 {
+	border: none;
+	margin: 0px;
+}
+
+/*Added by Sean*/
+
+div.body-container {
+	padding-top: 0px;
+}
+
+.navbar {
+	border-radius: 0px;
+}
+
+.view-submissions-btn {
+	padding-left: 0px;
+	float: left;
+}
+
+.challenge-owner-text {
+	margin-top: 6px;
+	margin-bottom: 16px;
+	float: left;
+	width: auto;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.reward-row-additional .label4 {
+	width: auto;
+	padding-right: 30px;
+	padding-bottom: 5px;
+}
+
+.reward-row-additional .label5 {
+	width: auto;
+	padding-right: 30px;
+	padding-bottom: 5px;
+}
+
+.reward-row-additional .label6 {
+	width: auto;
+	padding-right: 30px;
+	padding-bottom: 5px;
+}
+
+.reward-row-additional .label7 {
+	font-size: 12px;
+	width: auto;
+	text-align: right;
+}
+
+.main-content {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.showing {
+	text-align: right;
+	font-size: .85em;
+}
+
+#submissions-table {
+	width: 100%;
+}
+
+.submission-list th, .submission-list div.header {
+	background-color: #27aae0;
+}
+
+.submission-list div.header {
+    border: white 1px solid;
+}
+
+.submission-list th.asc {
+	background-position: right 10px top 9px;
+}
+
+.submission-list th:hover, .list tr:hover {
+    background: #eee;
+}
+
+
+.applyButtons-top span {
+	padding-left: 3px;
+}
+
+.view-submissions-btn span {
+    padding-left: 3px;
+}
+
+.pdf-download-button span {
+    padding-left: 3px;
+}
+
+.applyButtons-top .buttons-for-all fa {
+	padding-right: 3px;
+}
+
+.message {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    background-color: #e3e7ea;
+    color: red;
+}
+
+/*Updates, Additions and Overwrites specific to Submission Judging -- Added by Sean*/
+
+#judge-solutions .container-fluid {
+	padding-left: 32px;
+	padding-right: 42px;
+}
+
+#judge-solutions .row {
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#judge-solutions .col-md-12 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#judge-solutions .mych-heading {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#judge-solutions .challenge-number {
+	padding-left: 5px;
+	color: rgba(97,97,101,0.5);
+	font-size: .75em;
+}
+
+#judge-solutions .graphic-filter {
+	clear: both;
+	margin-top: 4px;
+}
+
+#expandContractDocButton {
+	   float: right;
+	background-color: #fff;
+	padding: 2px;
+	margin: 2px;
+	line-height: normal;
+}
+
+#judge-solutions #expandContractDocButton .fa {
+	color: rgba(97,97,101,0.65);
+}
+
+  
+
+
+
+#judge-solutions #judging-panel  {
+    padding-top: 6px;
+/*     margin-bottom: 30px; */
+/*      height: auto; */
+/*      padding: 10px 8px 10px 8px; */
+   
+/*      z-index: -2 */
+}
+
+#judge-solutions #submission-panel  {
+ 
+    padding-top: 6px;
+ 
+}
+
+#judging-panel .panel {
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+
+#judging-panel .panel-heading {
+    background-color: #ffd100;
+}
+
+/* #judge-solutions #judging-panel .scorecard-description { */
+/* 	padding-bottom: 10px; */
+/* } */
+
+#judge-solutions #judging-panel .scorecardQuestionDescription {
+	padding-left: 16px;
+}
+
+#judge-solutions #judging-panel .scorecardSliderInput {
+	padding-top: 6px;
+	padding-left: 16px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+#judge-solutions #judging-panel .scorecardSlider {
+	   background: blue;
+    background-color: rgba(255,209,0,0.3);
+    border-color: #f2c600;
+ 
+ 
+}
+
+#judge-solutions #judging-panel select, #judge-solutions #judging-panel input{
+	margin-left: 16px;
+}
+
+#judge-solutions #judging-panel .buttons {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#judge-solutions #judging-panel .scorecardBtn {
+	margin-left: 16px;
+}
+
+#judge-solutions .challenge-detail-link {
+	float: left;
+}
+
+#judge-solutions .prev-next-wrapper {
+	float: right;
+	width: auto;
+	padding-top: 7px;
+}
+
+#judge-solutions .prev-solution {
+	float: left;
+}
+
+#judge-solutions .next-solution {
+	padding-left: 20px;
+}
+
+canvas.pdf-canvas {
+	//width: 100%;
+	//height: 100%;
+	overflow: auto;
+	box-sizing: content-box;
+}
+
+.pdfjs-page, .tabpane {
+	overflow: auto
+	width: 100%;
+    height: 100%;
+}
+
+#submission-panel {
+	height: 100%;
+}
+
+.pdf-page-span {
+	font-size: .9em;
+	margin: 2px;
+}
+
+ 
+
+.pdf-download-button {
+	float: right;
+	margin: 2px;
+}
+
+.tab-content {
+	 //  border: 1px solid black;
+}
+
+
+  
+
+
+.next-solution {
+  float: right;
+}
+
+.prev-solution {
+ // float: left;
+ // margin-right:  40px;
+}
+ 
+.challenge-detail-link {
+    font-size: 1.5em;
+}
+
+/* .scorecard-description { */
+/*     font-size: 1.25em; */
+/* } */
+
+div.errors {
+    border-color:  red;
+    border-style: solid;
+}
+
+nav.sub-nav {
+	padding-top: 0px !important;
+}
+
+.slider-selection {
+    background: rgb(217, 177, 0);
+}
+
+ .slider-track-high {
+ background: white;
+ border-color: black;
+ border-style: solid;
+ border-width: 1px;
+ }
+
+.slider {
+ padding-right: 0px;
+ padding-left: 0px;
+ margin-top: -8px;
+}
+
+
+.submission-row #slider img {
+    float: left;
+}
+
+.submission-row #slider #arrow {
+    clear: both;
+    float: left;
+    background-color: rgba(255,255,255,0.65);
+    padding-top: 1px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#judge-solutions #judging-panel .slider-horizontal {
+	width: 100%;
+}
+
+#judge-solutions #judging-panel input {
+    
+}
+
+#judge-solutions #judging-panel .multi-choice-multi-select,
+#judge-solutions #judging-panel .multi-choice-select {
+    width: 100%;
+    padding-right: 20px;
+}
+
+#judge-solutions #judging-panel select {
+    width: 100%;
+}
+
+#judge-solutions #judging-panel .slider-handle{
+    border-color: #ffd100;
+    background: #ffd100;
+    background-image: none;
+}
+
+#judge-solutions #judging-panel .slider-handle{
+  cursor: grab;
+}
+
+/*  background:   #8dc63f; or #9e1f63*/
+#judge-solutions #judging-panel .slider-tick, 
+#judge-solutions #judging-panel .slider-tick.slider-selection,
+#judge-solutions #judging-panel .slider-selection.tick-slider-selection{
+    border-color:  #ffd100;
+    background:   #ffd100;
+    background-image: none;
+}
+
+#judge-solutions #judging-panel input {
+    color: #ffd100 ;
+    font-weight:bold;
+    background-color: #eee ;
+}
+
+#judge-solutions #judging-panel a.btn {
+    color: black;
+    font-weight:bold;
+    background-color:white ;
+}
+
+  .slider-handle {
+    width: 2em !important;
+    height: 1.5em !important;
+    top: 50% !important;
+    margin-top: -.8em !important;
+    text-align: center !important;
+    line-height: 1em !important;
+    color: black !important;
+    border-radius: 15px !important;
+  }
+
+.nav-tabs > li > .judging-criteria-header {
+	margin-right: 2px;
+	border-radius: 4px 4px 0 0;
+	padding: 10px 15px;
+	border: 1px solid #ddd;
+	
+}
+
+#judge-solutions #judging-panel div.scorecard-button input.scorecardBtn,
+#judge-solutions #judging-panel div.scorecard-button a.scorecardBtn   {
+	background: white !important;
+	color: black;	
+}
+
+#judge-solutions #judging-panel div.scorecard-button input.scorecardBtn[disabled],
+#judge-solutions #judging-panel div.scorecard-button a.scorecardBtn.disabled   {
+    cursor: not-allowed;
+    opacity: .65; 
+}
+
+.nav-tabs > li.active >  a.remote-tab {
+	font-weight: bold;
+}
+
+#submission-panel .pdf-buttons {
+ background: #ffd100;
+  }
+ 
+// specific for solutionAdmin
+.submitted-file-header {
+	border-right: 1px #ffffff solid;
+}
+
+.submitted-file-content {
+/* 	background: #eee;  */
+	overflow: hidden;
+
+	
+}
+.submitted-file-content-border {
+    border-right: 1px #cccccc solid;
+ 
+    
+}
+
+.mych-heading {
+    padding-top: 10px;
+    padding-bottom: 14px;
+}
+
+.mych-message {
+    display: block;
+    clear: both;
+    position: relative;
+    margin-top: 10px;
+}
+
+.mych-tab-holder {
+    display: block;
+    position: relative;
+}
+
+.mych-active-tab {
+    display: inline;
+   /* height: 27px;   */
+    padding: 8px 9px 8px 9px;
+    background: url( resource:/css/images/mych_tab1a.gif ) repeat-x;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+.mych-active-tab-left {
+    display: inline;
+    padding: 8px 0 8px 0;
+   /* height: 27px;    */
+
+    background: url( resource:/css/images/mych_tab1a_left.gif ) no-repeat;
+
+}
+
+.mych-active-tab-right {
+    display: inline;
+    padding: 8px 0 8px 7px;
+ /*   height: 27px;       */
+
+    background: url( resource:/css/images/mych_tab1a_right.gif ) no-repeat;
+
+}
+
+.mych-active-tab a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.mych-active-tab a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.mych-active-tab a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.mych-active-tab a:active {
+    color: #333;
+    text-decoration: none;
+}
+
+.mych-tabs {
+    display: inline;
+  /*  height: 27px;         */
+    padding: 8px 6px 8px 6px;
+    background: url( resource:/css/images/mych_tab2b.gif ) repeat-x;
+    font-weight: bold;
+    color: #036;
+}
+
+.mych-tabs a {
+    font-size:0.90em;
+}
+
+.mych-tabs a:link {
+    text-decoration: none;
+    color: #03c;
+}
+.mych-tabs a:hover {
+    text-decoration: underline;
+    color: #03c;
+}
+.mych-tabs a:visited {
+    text-decoration: none;
+    color: #03c;
+}
+.mych-tabs a:active {
+    text-decoration: underline;
+    color: #03c;
+}
+
+/*Style for InnoTagLib/getChallengeDetailsLinks tag - Created for Project Room: Challenge Details*/
+
+.mych-active-link {
+    color: #000000;
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+.mych-active-link a:active {
+    color: #000000;
+    text-decoration: none;
+}
+
+.mych-active-link a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.mych-active-link a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+.mych-links {
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+
+.mych-tabs-left {
+    display: inline;
+  /*  height: 27px;     */
+    padding: 8px 0 8px 0;
+    background: url( resource:/css/images/mych_tab2b_left.gif ) no-repeat;
+}
+
+.mych-tabs-right {
+    display: inline;
+ /*   height: 27px;  */
+    padding: 8px 0 8px 7px;
+    background: url( resource:/css/images/mych_tab2b_right.gif ) no-repeat;
+}
+
+.mych-tabs a {
+    text-decoration: none;
+
+}
+
+.mych-tabs a:visited {
+    text-decoration: none;
+}
+
+.mych-tabs a:hover {
+    text-decoration: underline;
+}
+
+.mych-tabs a:active {
+    text-decoration: none;
+}
+
+.myin-contain2 {
+    display: block;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    border-bottom: 5px solid #003265;
+}
+
+.solution-edit-panel {
+	padding: 8px 8px 8px 8px; 
+	background: #eee;
+}
+
+.download-file-panel {
+	margin-right: 0 !important;
+	margin-left: 0 !important;	
+}
+
+.download-file-panel-spacing {
+    background: #eee !important;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.download-file-button-spacing {
+    margin-bottom: 20px !important;
+    background: #eee !important;
+    border: 1px solid #ccc;
+}
+
+.margin-10px {
+	margin:10px
+}
+.row-no-margin {
+	margin-right: 0 !important;
+    margin-left: 0 !important;  
+}
+
+.action-rhs {
+    clear: left;
+    margin-top: 20px;
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+/*     border: 1px solid #ccc; */
+    padding: 10px;
+}
+.action-button {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.solution-edit-page .panel-heading {
+	background: #eee;	
+}
+
+.btn-primary {
+	background-color: #27aae0; 
+	border-color: #27aae0;
+	}
+	
+.btn-primary:hover {
+	background-color: #000067;
+	}	
+	
+.challenge-titleUX > a {
+	 color: #000067;
+}
+
+
+	
+.pdf-reader-panel {
+	border: none;
+}
+
+.info-text, .note {
+	padding: 10px;
+	margin-left: 16px;
+	margin-right: 16px;
+}
+
+/* #discussionScorecards .scorecard-description { */
+/* 	margin-top: -5px; */
+/* } */
+
+img.note-icon {
+	max-height: 50px;
+	max-width: 50px;
+	width: 20px;
+	height: 20px;
+}
+
+button.add-choice, button.remove-choice {
+/* 	color: black; */
+/* 	border: 1px solid black; */
+	padding: 2px;
+/* 	margin: 0; */
+}
+
+.no-padding-margins {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.vertical-align-top {
+	vertical-align: top !important;
+}
+
+.question-title {
+	margin-bottom: 10px;
+}
+
+.no-bold {
+	font-weight: 400 !important;
+}
+
+.submit-explain {
+	margin-left: 16px;
+	margin-bottom: 20px;
+	font-style: italic;
+}
+
+.scorecardUserscoreTotal {
+	 float: right !important;
+	 margin-right: 16px;
+
+}
+
+.scorecardUserscore {
+	clear: both;
+	padding: 20px;
+}
+
+.disabledSelect {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.scorecardUserscore td.criteria-question {
+	font-weight: 900;
+	font-size: 1.2em;
+ 
+}
+
+.breadcrumb-item:nth-child(n+2)::before {
+	content: " | ";
+}
+
+body.wait *, body.wait
+{
+    cursor: progress !important;
+
+}
+
+.legend-red {
+	background: #cc0000;
+	padding: 3px;
+	margin: 2px;
+	color: black;
+}
+
+.legend-blue {
+	background: #27aae0; 
+	color: white;
+	padding: 3px;
+	margin: 2px;
+}
+
+.legend-dark-blue {
+    background: #333; 
+    color: white;
+    padding: 3px;
+    margin: 2px;
+}
+
+.legend-yellow {
+    background: #f2c600; 
+    color: white;
+    padding: 3px;
+    margin: 2px;
+}
+
+
+.legend-green {
+	background: #8dc63f;
+	padding: 3px;
+	color: black;
+	margin: 2px;
+}
+
+.inno-red {
+    background: #cc0000;
+    color: black;
+}
+
+.inno-blue {
+    background: #27aae0; 
+    color: black;
+ 
+}
+
+.inno-dark-blue {
+    background: #000067; 
+    color: white;
+    border-color: #000067; 
+}
+
+.inno-dark-blue-text {
+    color: #000067;
+}
+
+.inno-yellow {
+    background: #f2c600; 
+    color: black;
+}
+
+
+.inno-green {
+    background: #8dc63f;
+    color: black;
+}
+
+.inno-light-grey {
+	background: #e4e4e4;
+	border-color: #e4e4e4;
+}
+
+.hand-cursor {
+	cursor: pointer;
+}
+
+#discussionScorecards .question {
+	margin: 10px;
+}
+
+.small-note {
+	font-size: .80em;
+	font-style: italic;
+	
+}
+
+.inno-link-color {
+	color: #000067 !important;
+}
+
+div.challenge-tags span.tags-title {
+	padding: 0;
+}
+
+div.challenge-row-refresh {
+    background-color: #ffffff;
+    border-top: 3px solid #e4e4e4;
+    padding-bottom: 10px;
+}
+
+#challenge-content-panel-refresh {
+
+
+/*     padding: 15px; */
+
+}
+
+.cb-select, .cb-input, .cb-filter {
+	width: 100%;
+	border-radius: 0 !important;
+/* 	box-sizing: border-box; */
+}
+
+.cb-select .btn, .cb-input .btn, .cb-filter .btn {
+    width: 100%;
+    border-radius: 0 !important;
+/*  box-sizing: border-box; */
+}
+
+.cb-filter {
+	margin: 2px;
+}
+
+
+.show-bar .select-style-refresh, .show-bar-left .select-style-refresh {
+	 margin: 6px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.show-bar label, .show-bar-left label {
+  margin-bottom: 0px;}
+
+.justify-content-md-center {
+	padding:  20px;
+	text-align: center;
+	
+}
+
+.filter-panel-refresh {
+	padding: 10px;
+	margin: 0;
+	
+}
+
+.no-padding-right {
+	padding-right: 0px !important;
+}
+
+.no-margin-bottom {
+	margin-bottom: 0 !important;
+} 
+
+#innocentiveChallengelink:active,
+#innocentiveChallengelink:hover,
+#innocentiveChallengelink:focus,
+#pavilionListLink:active,
+#pavilionListLink:hover,
+#pavilionListLink:focus,
+#partnerChallengelink:active,
+#partnerChallengelink:hover,
+#partnerChallengelink:focus,
+#innocentive-list-item.active #innocentiveChallengelink,
+#pavilion-list-item.active #pavilionListLink,
+#partner-list-item.active #partnerChallengelink
+  {
+	margin-top: 0 !important;
+    background-color: #f2c600 !important;
+    color: black;
+}
+
+ 
+#pavilionListLink, #partnerChallengelink, #innocentiveChallengelink {
+	 padding-top: 10px !important;
+    padding-bottom: 10px; !important;
+    margin-bottom: 0 !important;
+    background-color: #9e1f63;
+    color: white;
+    font-size: 1.4em;
+    border-radius: 0;
+    border: 1px solid white;
+    cursor: pointer;
+}
+@media (max-width: 900px) {
+    #pavilionListLink, #partnerChallengelink, #innocentiveChallengelink {
+    width: 100%;
+    }
+}
+ 
+@media (min-width: 900px) {
+
+	.extra-wide {
+		padding: 5px 100px;
+		border-radius: 0;
+	}
+	
+
+}
+
+@media (max-width: 900px) {
+	.media-center {   
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .right {
+        float: inherit !important;
+    }
+    
+    .center-col {
+    width: 100%;
+    float: inherit !important;
+    }
+    
+ 
+}
+
+
+.extra-wide {
+        border-radius: 0;
+}
+    
+.label-padding {
+	padding: 7px 10px;
+}
+
+.footer-logo img {
+	height: 33px;
+}
+
+.footer-logo a img {
+    height: 33px;
+}
+
+
+.inno-image {
+	margin-top: 10px;
+	padding: 5px;
+	border: none;
+}
+
+.challenge-name{
+	font-size:  1.6em;
+}
+
+.award-amount {
+	font-size: 1.3em;
+}
+
+.odd-refresh {
+    background: #f5f5f5;
+}
+
+.even-refresh {
+    background: white;
+}
+
+.filter-label-refresh {
+	font-weight: 400;
+}
+
+.dropdown-menu {
+  min-width: 200px;
+}
+.dropdown-menu.columns-2 {
+  min-width: 400px;
+}
+.dropdown-menu.columns-3 {
+  min-width: 930px;
+}
+.dropdown-menu li a {
+  padding: 5px 15px;
+  font-weight: 300;
+}
+.multi-column-dropdown {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.multi-column-dropdown li a {
+  display: block;
+  clear: both;
+  line-height: 1.428571429;
+  color: #333;
+  white-space: normal;
+}
+.multi-column-dropdown li a:hover {
+  text-decoration: none;
+  color: #262626;
+  background-color: #999;
+}
+
+@media (max-width: 767px) {
+  .dropdown-menu.multi-column {
+    min-width: 240px !important;
+    overflow-x: hidden;
+  }
+}
+
+.email-recipients {
+	height: 70px; 
+	overflow-x: hidden; 
+	overflow-y: scroll; 
+	background-color: #fff; 
+	border: 1px solid #7f9db9;
+}
+
+.email-box {
+	width: 100%;
+}
+
+.float-right {
+	float: right;
+}
+
+.hidden-pavilion-panel {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+}
+
+.hidden-pavilion-panel h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.tabContainer {
+/* 	border-bottom: 3px solid #e4e4e4; */
+	    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 0px;
+}
+
+.tabContainer-bottom {
+ border-bottom: 3px solid #e4e4e4;
+}
+
+.tabContainer-bottom .nav-pills li.active a {
+	  background-color: #f2c600 !important; 
+    color: black !important;
+	 border-radius: 0px;
+}
+
+.tabContainer .nav-tabs> li >a {
+    border-radius: 0px;
+    font-size: 16px;
+}
+ 
+ 
+  
+  .hiddenAlignmentLabel {
+  height:15px;
+  }
+  
+Footer {
+	margin-top: 15px;
+	}
+
+#challenge-content-panel-refresh {
+	border-bottom: 3px solid #e4e4e4; 
+	margin-bottom: 15px;
+	}
+
+/* .from-Registration { */
+/*     background-color: green; */
+/* } */
+
+/* .from-Linked-In { */
+/*     background-color: yellow; */ 
+/* } */
+
+	
+
+/* .byline { */
+/* 	margin-bottom: 10px; */
+/* } */
+ 
